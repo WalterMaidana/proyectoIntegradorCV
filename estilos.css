@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    /* padding: 0; */
+}
+
+.itemsMenu{
+    padding-left: 50px;
+    text-decoration: none;
+    color: steelblue;
+    font-weight: bolder;
+}
+
+.imgPrincipal{
+    background-image: url("img/fondoPrincipal.jpg");
+    /* background-repeat: repeat-x; */
+    min-height: 400px;
+}
