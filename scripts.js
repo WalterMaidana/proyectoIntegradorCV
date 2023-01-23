@@ -1,6 +1,9 @@
 let foto = document.getElementById("foto");
 let nomYape = document.getElementById("nomYape");
-let sectionSobreMi = document.getElementById("sectionSobreMi");
+let sectionContacto = document.getElementById("sectionContacto");
+let seccionFormacion = document.getElementById("seccionFormacion");
+let seccionExperiencia = document.getElementById("seccionExperiencia");
+let seccionHabilidades = document.getElementById("seccionHabilidades");
 let genero = document.getElementById("genero");
 let pais = document.getElementById("pais");
 let estado = document.getElementById("estado");
@@ -30,14 +33,42 @@ fetch("https://randomuser.me/api/")
             email.innerHTML = dato.email;
         }
     });
-
-    sectionSobreMi.addEventListener("mouseover", function(){
-        sectionSobreMi.style.background = "#2596be";
-        sectionSobreMi.style.color = "white";
-
+    //Sección contacto
+    sectionContacto.addEventListener("mouseover", function(){
+        sectionContacto.style.background = "#2596be";
+        sectionContacto.style.color = "white";
     })
-    sectionSobreMi.addEventListener("mouseout", function(){
-        sectionSobreMi.style.background = "white";
-        sectionSobreMi.style.color = "black";
+    sectionContacto.addEventListener("mouseout", function(){
+        sectionContacto.style.background = "white";
+        sectionContacto.style.color = "black";
     })
-  
+
+    //Sección formación
+    seccionFormacion.addEventListener("mouseover", function(){
+        seccionFormacion.style.background = "#79820f";
+        seccionFormacion.style.color = "white";
+    })
+    seccionFormacion.addEventListener("mouseout", function(){
+        seccionFormacion.style.background = "white";
+        seccionFormacion.style.color = "black";
+    })
+
+    //Sección experiencia
+    seccionExperiencia.addEventListener("mouseover", function(){
+        seccionExperiencia.style.background = "#be4d25";
+        seccionExperiencia.style.color = "white";
+    })
+    seccionExperiencia.addEventListener("mouseout", function(){
+        seccionExperiencia.style.background = "white";
+        seccionExperiencia.style.color = "black";
+    })
+    
+    //Sección intereses
+    seccionHabilidades.addEventListener("mouseover", function(){
+        seccionHabilidades.style.background = "#27760b";
+        seccionHabilidades.style.color = "white";
+    })
+    seccionHabilidades.addEventListener("mouseout", function(){
+        seccionHabilidades.style.background = "white";
+        seccionHabilidades.style.color = "black";
+    })
