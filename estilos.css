@@ -4,15 +4,55 @@
     box-sizing: border-box;
 }
 
+div > .itemsMenu{
+    padding-left: 0px;
+}
+
 .itemsMenu{
     padding-left: 50px;
     text-decoration: none;
     color: steelblue;
     font-weight: bolder;
+    text-align: center;
 }
 
+/* Imagen de fondo */
 .imgPrincipal{
     background-image: url("img/fondoPrincipal.jpg");
-    /* background-repeat: repeat-x; */
     min-height: 400px;
+    background-attachment: fixed;
+}
+
+footer{
+    background-color: rgb(145, 214, 238);
+}
+
+@media (max-width: 768px) {
+    nav .itemsMenu{
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    .itemsMenu{
+        padding-left: 20px;
+        font-size: 0.7rem;
+    }
+    #sectionContacto div dl{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 375px) {
+    .itemsMenu{
+        padding-left: 6px;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .itemsMenu{
+        padding-left: 15px;
+        font-size: 0.5rem;
+    }
 }
